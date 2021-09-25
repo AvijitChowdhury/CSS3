@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            /*without using media query we can use flex wrap
+            flexwrap:wrap*/
+
+            max-width: 1200px;
+            margin:0 auto;
+        }
+        .food{
+            border: 3px solid lightblue;
+            border-radius: 10px;
+            margin:10px;
+            width: 400px;
+            
+        }
+        .food img{
+            width:180px;
+        }
+        @media (max-width:760px){
+            .container{
+            flex-direction:column;
+        }
+    }
+        @media (max-width:760px) {
+            .container .food{
+                background-color: darkkhaki;
+            }
+        }
+
+        @media (min-width:1220px){
+            .container .food{
+                background-color: darkorchid;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="food">
+        <img src="images/food.jpg" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique exercitationem nulla id libero harum tempora veritatis, saepe eum, consequatur dolore qui illum soluta autem quidem dicta aut magnam minus corrupti est iste, quo nihil eligendi? Sequi, dolorum! Dignissimos, perspiciatis reiciendis!</p>
+    </div>
+    <div class="food">
+        <img src="images/food.jpg" alt="">
+        <p>Odit sit quia dolorum velit enim nesciunt quis aliquid a iste, nulla, molestias, quibusdam cupiditate. At laborum incidunt consectetur quos itaque similique commodi! Labore iure est consectetur quis nemo nulla incidunt veritatis adipisci at ipsum, quas, magnam doloribus tempora facilis.</p>
+    </div>
+    <div class="food">
+        <img src="images/food.jpg" alt="">
+        <p>Placeat, voluptate voluptates ab ipsa repellat nihil quibusdam incidunt molestias excepturi, nam in rerum, itaque libero laudantium ex eveniet aliquid nisi. Quibusdam voluptatum voluptates laudantium qui at officiis inventore ut odio reiciendis. Sit ab impedit omnis pariatur, magni ipsum quasi?</p>
+    </div>
+    <div class="food">
+        <img src="images/food.jpg" alt="">
+        <p>Vel nobis eveniet maxime voluptatum labore. Deserunt distinctio ut tenetur sed. Accusamus placeat molestiae nam. Beatae optio expedita blanditiis accusamus non? Vitae ipsam nihil corporis, beatae magnam numquam impedit voluptatum quia veritatis adipisci dolorum laudantium laboriosam quaerat hic earum voluptate?</p>
+    </div>
+    <div class="food">
+        <img src="images/food.jpg" alt="">
+        <p>Sed itaque quam quia aliquam esse minus aut voluptatem praesentium sit odit consequuntur, ullam id sapiente iste omnis alias. Optio accusamus fuga facere cupiditate veritatis quisquam impedit dignissimos, enim incidunt, modi amet, ipsa odio necessitatibus placeat aliquid ipsam vitae distinctio!</p>
+    </div>
+    <div class="food">
+        <img src="images/food.jpg" alt="">
+        <p>Perspiciatis autem tempore nostrum aliquid non cum, dolore commodi est eaque culpa ullam minima, minus provident? Eos numquam, illum, doloribus ex doloremque possimus expedita sint voluptas suscipit quo consequatur quis asperiores beatae ullam mollitia ipsam animi quos accusantium dolorum ratione?</p>
+    </div>
+    </div>
+</body>
+</html>

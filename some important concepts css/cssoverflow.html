@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>overflow</title>
+    <style>
+    div{
+        width:150px;
+        height:200px;
+        background-color: green;
+        border: 5px;
+        border-radius: 2px solid red;
+        overflow: scroll;
+
+    } 
+    .tooltip:hover .tooltip-text{
+        visibility: visible;
+    }
+    .tooltip .tooltip-text{
+        background-color: blueviolet;
+        height: 50px;
+        width: 100px;
+        text-emphasis-color: black;
+        visibility: hidden;
+        border: 10px dotted orange;
+        border-radius: 2px;
+        position: absolute;
+        top:20px;
+        right=50px;
+        outline-style: dashed;
+
+    }
+</style>
+</head>
+<body>
+    <a class="tooltip" href="#">Facebook
+        <span class="tooltip-text"> Facebook is amazing</span>
+    </a>
+<div class="tooltip">
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.   
+    
+</div>
+
+    
+</body>
+</html>

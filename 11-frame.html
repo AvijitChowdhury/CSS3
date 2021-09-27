@@ -8,20 +8,22 @@
     <style>
         .photo-album{
             display: flex;
+            justify-content: center;
             flex-wrap: wrap;
             margin: 10px;
         }
         .photo-frame{
-            width: 400px;
-            height: 200px;
+            width: 360px;
+            height: 210px;
 
             border:5px solid yellow;
             position: relative;
-            margin: 10px;
+            margin: 10px 10px;
+            overflow: hidden;
 
         }
         .photo-frame .photo img{
-            width: 100%;
+            width: 99%;
         }
 
         .photo-detail{
@@ -33,13 +35,21 @@
         }
         .photo-frame:hover  .photo-detail{
             display: block;
-            background-color:#f1be15;
+            background-color:rgb(219, 195, 10 ,0.7);
         }
 
         .photo-frame:hover .photo-detail h2{
             color: white;
             background-color: black;
             text-align: center;
+        }
+
+        .photo-frame:hover .photo img{
+           /* transform: scale(1.2);*/
+           /*transform: skew(-30deg);*/
+           transform: scale(1.5);
+            transition: transform 2s;
+            
         }
     </style>
 </head>

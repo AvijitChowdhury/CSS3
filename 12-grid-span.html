@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        .container{
+            display: grid;
+            
+            grid-template-columns:1fr 1fr 1fr;
+        }
+        .article{
+            background-color: aqua;
+            margin:10px 10px;
+            padding: 10px;
+        }
+        .article-1{
+           
+           background-color: red;
+           grid-row: 1/span 6;
+           
+        }
+        .article-2{
+            grid-column:span 2;
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="article article-1">
+            <article->1</article->
+        </div>
+        <div class="article article-2">
+            <article->2</article->
+        </div>
+        <div class="article article-3">
+            <article->3</article->
+        </div>
+        <div class="article article-4">
+            <article->4</article->
+        </div>
+        <div class="article article-5">
+            <article->5</article->
+        </div>
+        <div class="article article-6">
+            <article->6</article->
+        </div>
+        <div class="article article-7">
+            <article->7</article->
+        </div>
+        <div class="article article-8">
+            <article->8</article->
+        </div>
+        <div class="article article-9">
+            <article->9</article->
+        </div>
+        <div class="article article-10">
+            <article->10</article->
+        </div>
+        <div class="article article-11">
+            <article->11</article->
+        </div>
+        <div class="article article-12">
+            <article->12</article->
+        </div>
+        <div class="article article-13">
+            <article->13</article->
+        </div>
+        <div class="article article-14">
+            <article->14</article->
+        </div>
+        <div class="article article-15">
+            <article->15</article->
+        </div>
+    </div>
+</body>
+</html>
